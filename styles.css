@@ -161,5 +161,54 @@ footer a {
 footer a:hover {
   color: #ececec;
 }
+/* @media screen 
+and (width: 1280px)
+and (height: 800px)
+{ 
+} */
+/* main {
+  width: 885.5px;
+} */
+@media (min-width: 768px) and (max-width: 1279px){
+  main {
+    width: 90%;
+  }
+  .splash{
+    display: none;
+  }
+  footer{
+    grid-template-columns: repeat(2,1fr);
+  }
+}
+@media (min-width: 0px) and (max-width: 767.9px){
+  main {
+    width: 90%;
+    grid-template-columns: 1fr;
+  }
+  .splash {
+    display: none;
+  }
+}
+
+
+@media (max-width:767px) and (min-width:0px)
+{
+  header{
+grid-template-columns: 1fr;
+  }
+  footer ul{
+    list-style: none;
+  }
+  footer h4{
+    border-bottom: 0px;
+  }
+  footer{
+    text-align: center;
+    padding-top: 25px;
+    padding-left: 25px;
+    padding-right: 25px;
+    grid-template-columns: repeat(2,1fr);
+  }
+}
 
 /* Media queries */
